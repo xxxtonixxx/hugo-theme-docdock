@@ -1,0 +1,32 @@
+[create-header-md]
+other = "Crea un _header.md para customizar esto"
+
+[Search-placeholder]
+other = "Buscar..."
+
+[Clear-History]
+other = "Limpiar historial"
+
+[Next-Pages]
+other = "Siguiente página"
+
+[Previous-Pages]
+other = "Página anterior"
+
+[pagination-on]
+other = "en"
+
+[Attachments-label]
+other = "Adjuntos"
+
+[title-404]
+other = "Error"
+
+[message-404]
+other = "Woops. Parece que esta página no existe."
+
+[Go-to-homepage]
+other = "Volver a Inicio"
+
+[Edit-this-page]
+other = "Editar página"
