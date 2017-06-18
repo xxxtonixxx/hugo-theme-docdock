@@ -401,19 +401,19 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     font-weight: 400;
     font-size: 15px;
 }
-#sidebar a {
+#sidebar a, #sidebar span.menu {
     color: white;
 }
-#sidebar a:hover {
+#sidebar a:hover, #sidebar span.menu:hover {
     color: #e6e6e6;
 }
-#sidebar a.subtitle {
+#sidebar a.subtitle, #sidebar span.menu.subtitle {
     color: rgba(204, 204, 204, 0.6);
 }
 #sidebar hr {
     border-bottom: 1px solid #2a232f;
 }
-#sidebar a.padding {
+#sidebar a.padding, #sidebar span.menu.padding {
     padding: 0 1rem;
 }
 #sidebar h5 {
@@ -486,15 +486,23 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 #sidebar ul.topics li.parent > ul, #sidebar  li.active > ul {
     display: block;
 }
-#sidebar ul.topics > li > a {
+
+#sidebar span.menu {
+    cursor: pointer;
+}
+
+#sidebar ul.topics > li > a, 
+#sidebar ul.topics > li > span.menu {
     line-height: 2rem;
     font-size: 1.1rem;
 }
-#sidebar ul.topics > li > a b {
+#sidebar ul.topics > li > a b, 
+#sidebar ul.topics > li > span.menu b {
     opacity: 0.5;
     font-weight: normal;
 }
-#sidebar ul.topics > li > a .fa {
+#sidebar ul.topics > li > a .fa, 
+#sidebar ul.topics > li > span.menu .fa {
     margin-top: 9px;
 }
 #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
@@ -504,7 +512,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     padding-left: 1rem;
     padding-right: 1rem;
 }
-#sidebar ul li.active > a {
+#sidebar ul li.active > a, #sidebar ul li.active > span.menu {
     background: #fff;
     color: #777 !important;
     margin-left: -1rem;
@@ -518,21 +526,21 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 #sidebar ul li.visited + span {
     margin-right: 16px;
 }
-#sidebar ul li a {
+#sidebar ul li a, #sidebar ul li span.menu {
     display: block;
     padding: 2px 0;
 }
-#sidebar ul li a span {
+#sidebar ul li a span, #sidebar ul li span.menu span {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     display: block;
     width: calc(100% - 20px);
 }
-#sidebar.showVisitedLinks ul li a span {
+#sidebar.showVisitedLinks ul li a span, #sidebar.showVisitedLinks ul li span.menu span {
     width: calc(100% - 45px);
 }
-#sidebar ul li > a {
+#sidebar ul li > a, #sidebar ul li > span.menu {
     padding: 4px 0;
     position: relative;
 }
