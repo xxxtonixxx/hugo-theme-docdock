@@ -1,6 +1,6 @@
-# Hugo docDock Theme
+# Qontu doc Theme
 
-This repository contains a theme for [Hugo](https://gohugo.io/), based on great [Matcornic Learn theme](https://github.com/matcornic/hugo-theme-learn/).
+This repository contains a theme for [Hugo](https://gohugo.io/), based on great [vjeantet's DocDock theme](https://github.com/vjeantet/hugo-theme-docdock) and [Matcornic Learn theme](https://github.com/matcornic/hugo-theme-learn/).
 
 Visit the [theme documentation](http://docdock.netlify.com/) to see what is going on. It is actually built with this theme.
 
@@ -10,6 +10,7 @@ Visit the [theme documentation](http://docdock.netlify.com/) to see what is goin
 - **Unlimited menu levels**
 - RevealJS presentation from markdown (embededed or fullscreen page)
 - Attachments files
+- Language selector
 - List child pages
 - Include segment of content from one page in another (Excerpt)
 - Automatic next/prev buttons to navigate through menu entries
@@ -22,7 +23,7 @@ Visit the [theme documentation](http://docdock.netlify.com/) to see what is goin
 Navigate to your themes folder in your Hugo site and use the following commands:
 ```
 $ cd themes
-$ git clone https://github.com/vjeantet/hugo-theme-docdock.git docdock
+$ git clone https://github.com/qontu/qontu-doc-theme.git qontu-doc
 ```
 
 Check that your Hugo version is minimum `0.22` with `hugo version`.
