@@ -16,8 +16,8 @@
     <ul class="topics">
         {{ $home := .Site.Home }}
         {{if not .Site.Params.noHomeIcon}}
-            <li data-nav-id="{{"/" | relURL}}" class="dd-item">
-            <a href="{{"/" | relURL}}"><i class="fa fa-fw fa-home"></i></a>
+            <li data-nav-id="{{ "/" | relLangURL}}" class="dd-item">
+            <a href="{{ "/" | relLangURL}}"><i class="fa fa-fw fa-home"></i></a>
             </li>
         {{end}}
 
@@ -39,6 +39,25 @@
         {{ end }}
 
         {{end}}
+        <li>
+            <span class="menu">
+            <span>Languages</span>
+                    <i class="fa fa-angle-right fa-lg category-icon"></i>
+            </span>
+            <ul>
+                {{ $lang := .Lang }}
+                {{ $base := .Site.BaseURL }}
+                {{ range .Site.Languages }}
+                <li class="dd-item {{ if eq .Lang $lang }} active {{ end }}">
+                    {{ if eq .Lang $lang }}
+                        <a href="javascript:void(0);" class="nav-link">{{ .LanguageName }}</a href="javascript:void(0);">
+                    {{ else }}
+                        <a class="nav-link" href="{{ $base }}{{ .Lang }}">{{ .LanguageName }}</a>
+                    {{ end }}
+                </li>
+                {{ end }}
+            </ul>
+        </li>
     </ul>
     
      
@@ -49,9 +68,11 @@
 </nav>
 
 <!-- templates -->
+
 {{ define "section-tree-nav" }}
 {{ $showvisitedlinks := .showvisitedlinks }}
 {{ $currentNode := .currentnode }}
+
 {{ range .sect.Sections}}
 
 <li data-nav-id="{{.URL}}" class="dd-item 
@@ -62,14 +83,21 @@
   <a href="{{ .RelPermalink}}">
     <span>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>
 
-    {{if or ( hasPrefix $currentNode.URL .URL) (.Params.alwaysopen) }}
-    <i class="fa fa-angle-down fa-lg category-icon"></i>
-    {{else}}
-    <i class="fa fa-angle-right fa-lg category-icon"></i>
-    {{end}}
-    
+   {{ $numberOfPages := len .Pages }} 
+
+    {{ if ne $numberOfPages 0 }}
+
+        {{if or ( hasPrefix $currentNode.URL .URL) (.Params.alwaysopen) }}
+        <i class="fa fa-angle-down fa-lg category-icon"></i>
+        {{else}}
+        <i class="fa fa-angle-right fa-lg category-icon"></i>
+        {{end}}
+
+    {{ end }}
+
     {{ if $showvisitedlinks}}<i style="color:grey" class="fa fa-check read-icon"></i>{{end}}
   </a>
+   {{ if ne $numberOfPages 0 }}
     <ul>
         {{ range .Pages }}
          {{ if not .Params.Hidden }}
@@ -85,6 +113,7 @@
         {{ end }}
         {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode "showvisitedlinks" $showvisitedlinks }}
     </ul>
+    {{ end }}
 </li>
 {{ end }}
 {{ end }}
