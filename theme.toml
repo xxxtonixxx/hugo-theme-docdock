@@ -13,9 +13,10 @@ min_version = 0.22
 
 [author]
   name = "qontu-doc"
+  homepage = "https://github.com/qontu/qontu-doc-theme"
 
 [original]
   name = "dockDock"
   homepage = "http://vjeantet.fr/"
   licenselink = "https://github.com/vjeantet/hugo-theme-docdock/blob/master/LICENSE.md"
-  homepage = "https://github.com/vjeantet/hugo-theme-docdock"
+  repo = "https://github.com/vjeantet/hugo-theme-docdock"
