@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="js csstransforms3d">
+<html lang="{{ .Page.Language | default "en" }}" class="js csstransforms3d">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -35,7 +35,7 @@
         <div class="padding highlightable">
         {{if not .IsHome}}
           <div id="top-bar">
-            {{ if and .IsPage .Site.Params.editURL }}
+            {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
               {{ $File := .File }}
               {{ $Site := .Site }}
               {{with $File.Path }}
@@ -55,8 +55,9 @@
                   </a>
                 </span>
                 <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
-                
-                {{ template "breadcrumb" dict "page" . "value" .Title }} 
+                <span class="links">
+                {{ template "breadcrumb" dict "page" . "value" .Title }}   
+                </span>
             </div>
             {{ partial "toc.html" . }}
           </div>
