@@ -1,0 +1,15 @@
+<div style="text-align: center;">
+{{ if .IsNamedParams }}
+    {{if not (hasPrefix (.Get "link") "https://embed.plnkr.co/") }}	
+    <iframe src="http://embed.plnkr.co/{{ .Get "link" }}/?show=preview" frameborder="0" width="80%" height="500"></iframe>
+    {{else}}
+    <iframe src="{{ .Get "link" }}/?show=preview" frameborder="0" width="80%" height="350"></iframe>
+    {{end}}
+{{else}}
+    {{if not (hasPrefix (.Get 0) "https://embed.plnkr.co/") }}	
+    <iframe src="http://embed.plnkr.co/{{ .Get 0 }}/?show=preview" frameborder="0" width="80%" height="350"></iframe>
+    {{else}}
+    <iframe src="{{ .Get 0 }}/?show=preview" frameborder="0" width="80%" height="350"></iframe>
+    {{end}}
+{{end}}
+</div>
