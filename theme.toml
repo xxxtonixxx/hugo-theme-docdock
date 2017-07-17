@@ -9,7 +9,7 @@ homepage = "https://github.com/qontu/qontu-doc-theme"
 repo = "https://github.com/qontu/qontu-doc-theme"
 tags = ["documentation", "menu","slide","search"]
 features = ["documentation","menu","nested sections","search","slide", "attachments"]
-min_version = 0.22
+min_version = 0.25
 
 [author]
   name = "qontu-doc"

@@ -26,7 +26,7 @@ $ cd themes
 $ git clone https://github.com/qontu/qontu-doc-theme.git qontu-doc
 ```
 
-Check that your Hugo version is minimum `0.22` with `hugo version`.
+Check that your Hugo version is minimum `0.25` with `hugo version`.
 
 ![Overview](https://github.com/vjeantet/hugo-theme-docdock/raw/master/images/tn.png)
 
