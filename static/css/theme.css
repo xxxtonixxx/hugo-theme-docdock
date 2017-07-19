@@ -386,7 +386,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     width: 300px;
     bottom: 0;
     left: 0;
-    
+
     font-weight: normal;
     font-size: 90%;
     line-height: 27px;
@@ -483,17 +483,17 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     cursor: pointer;
 }
 
-#sidebar ul.topics > li > a, 
+#sidebar ul.topics > li > a,
 #sidebar ul.topics > li > span.menu {
     /*line-height: 2rem;
     font-size: 1.1rem;*/
 }
-#sidebar ul.topics > li > a b, 
+#sidebar ul.topics > li > a b,
 #sidebar ul.topics > li > span.menu b {
     opacity: 0.5;
     font-weight: normal;
 }
-#sidebar ul.topics > li > a .fa, 
+#sidebar ul.topics > li > a .fa,
 #sidebar ul.topics > li > span.menu .fa {
     /*margin-top: 9px;*/
 }
@@ -650,7 +650,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     max-width: 80%;
 }
 #chapter h3 {
-    font-family: "Lato", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Lato", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: 300;
     text-align: center;
 }
@@ -671,13 +671,13 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     margin: 0;
 }
 body {
-    font-family: "Lato", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Lato", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     font-weight: normal;
     line-height: 1.6;
     font-size: 18px !important;
 }
 h2, h3, h4, h5, h6 {
-    font-family: "Lato", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "Lato", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-rendering: optimizeLegibility;
     color: #5e5e5e;
     font-weight: 400;
@@ -936,7 +936,7 @@ td {
     z-index: 1000000;
     display: none;
     padding: 5px 8px;
-    font: normal normal 11px/1.5 "Lato", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font: normal normal 11px/1.5 "Lato", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -1272,7 +1272,7 @@ pre .copy-to-clipboard:hover {
 
 #sidebar #shortcuts h3 {
     font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
-    color: white ;   
+    color: white ;
 }
 
 
